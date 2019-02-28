@@ -1,7 +1,7 @@
 (function() {
   const currentDocument = document.currentScript.ownerDocument;
 
-  class PersonalDetail extends HTMLElement {
+  class PersonDetail extends HTMLElement {
     constructor() {
       super();
 
@@ -13,7 +13,7 @@
     connectedCallback() {
       const shadowRoot = this.attachShadow({ mode: "open" });
       const template = currentDocument.querySelector("#person-detail-template");
-      const instance = template.textContent.cloneNode(true);
+      const instance = template.content.cloneNode(true);
       shadowRoot.appendChild(instance);
     }
 

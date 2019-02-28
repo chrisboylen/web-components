@@ -9,7 +9,7 @@
     connectedCallback() {
       const shadowRoot = this.attachShadow({ mode: "open" });
       const template = currentDocument.querySelector("#people-list-template");
-      const instance = template.textContent.cloneNode(true);
+      const instance = template.content.cloneNode(true);
       shadowRoot.appendChild(instance);
     }
 
