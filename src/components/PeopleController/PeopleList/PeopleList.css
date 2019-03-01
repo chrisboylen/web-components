@@ -1,0 +1,27 @@
+.people-list__container {
+  background: #808080b3;
+  border: 1px solid black;
+}
+
+.people-list__list {
+  list-style: none;
+  margin: 15px;
+  padding: 0;
+}
+
+.people-list__list > li {
+  font-size: 20px;
+  font-family: Helvetica;
+  color: #000;
+  text-decoration: none;
+  background: lightyellow;
+  border: solid 2px black;
+  cursor: pointer;
+  margin: 5px 0;
+  padding: 0 40px;
+}
+
+.people-list__name:hover {
+  background: black;
+  color: lightyellow;
+}
