@@ -1,4 +1,5 @@
 .card__user-card-container {
+  background: lightyellow;
   text-align: center;
   border-radius: 5px;
   border: 1px solid grey;
@@ -15,7 +16,16 @@
 }
 
 .card__details-btn {
-  background: #dedede;
+  background: orange;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 15px;
   padding: 6px;
   margin-bottom: 8px;
+}
+
+.card__details-btn:hover {
+  background: red;
+  color: lightyellow;
+  transform: scale(1.1);
 }
